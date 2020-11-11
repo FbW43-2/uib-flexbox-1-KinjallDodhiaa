@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.container > .box.box-4,
+.box.box-7 {
+  flex-basis: content;
+}
+
+.box:nth-of-type(1),
+.box:nth-of-type(5),
+.box:nth-of-type(6) {
+  background-color: tomato;
+}
+
+.box-1,
+.box-5 {
+  flex-shrink: 2;
+}
+
+.box-6 {
+  flex-shrink: 4;
+}
